@@ -1,0 +1,72 @@
+.sport__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 176px;
+    padding-bottom: 106px;
+
+   
+}
+
+.sport__info {
+    width: 100%;
+    max-width: 490px;
+}
+
+.sport__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+font-size: 50px;
+line-height: 120%;
+color: #000000;
+}
+
+.sport__wrap {
+    width: 100%;
+    max-width: 490px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sport__line {
+    width: 0px;
+    height: 120px;
+    border: 1px solid #888888;
+    // transform: rotate(90deg);
+}
+
+.sport__text {
+    margin-bottom: 0;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+}
+
+.sport__link {
+    display: inline-block;
+    width: 100%;
+    max-width: 260px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #EA625C;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@include max-width(520px){
+    .sport__inner {
+        flex-direction: column-reverse;
+    }
+}
